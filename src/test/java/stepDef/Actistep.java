@@ -15,6 +15,7 @@ public class Actistep {
 	    System.setProperty("webdriver.chrome.driver","");
 	    WebDriver driver= new ChromeDriver();
 	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    driver.manage().window().maximize();
 	}
 
 	@Given("User is on Login Page")
